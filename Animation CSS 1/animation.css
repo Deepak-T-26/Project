@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+h{
+    font-size: 1rem;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+}
+div:first-child{
+    background-color: aqua;
+    transform: translatex(-50%);
+    transform: rotatex(180deg);
+    transform: scalex(120%);
+    transform: skewX(-10deg);
+}
+div:nth-child(2){
+    background-color: blueviolet;
+    transform: translatey(-2rem);
+    transform: rotatey(180deg);
+    transform: scaley(120%);
+    transform: skewy(10deg);
+}
+div:last-child{
+    background-color: aquamarine;
+    transform: translate(-5rem, -5rem);
+    transform: rotate(70deg);
+    transform: scale(50%,50%);
+    transform: skew(-10deg,-10deg);
+}
+div:hover{
+    background-color: indianred;
+    transition-property: background-color;
+    transition: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+    transition: all 2s 0.5s;
+}
+div:last-child:hover{
+    transform: rotate(180deg);
+}
+.Animation{
+    animation-name: Deps;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation: Deps 5s ease-in-out 1s 5 normal forwards;
+
+
+}
+@keyframes Deps{
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translatey(300px) rotate(180deg);
+    }
+    66%{
+        transform: translateX(-300px) rotate(-180deg);
+    }
+    100%{
+        transform: translateX(0);
+        background-color: orange;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>BOOKS TO READ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="NavBar">
+        <h1>Books To Read</h1>
+    </div>
+    <div class="Bookname" id="book-container">
+        <div class="Bookname-side">
+            <h2>How Read People</h2>
+            <h5>Deepak T</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero est explicabo quos hic perferendis, autem, consequatur quia placeat omnis soluta reprehenderit provident blanditiis iure ratione consectetur dolorum doloribus nihil accusantium.</p>
+            <button onclick="deletebook(event)">Delete This Book</button>
+        </div>
+    </div>
+    <div class="popup-overlay" style="display:none;"></div>
+    <div class="popup-box" style="display:none;">
+        <h2>Add Books</h2>
+        <form id="add-book-form">
+            <input type="text" placeholder="Book title" id="book-title-input" required>
+            <input type="text" placeholder="Author name" id="book-author-input" required>
+            <textarea name="Books" placeholder="Short Description" id="book-description-input" required></textarea>
+            <button type="submit" id="AddBook">ADD</button>
+            <button type="button" id="CancelBook">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>

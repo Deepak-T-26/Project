@@ -1,0 +1,33 @@
+body{
+    background-image: url(./Free-Invitation-Card-Floral-Background-Mobile-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    a:link{
+        color: black;
+        background-color:transparent
+    
+        
+    }
+    A:visited{
+        color: blue;
+    }
+    a:hover{
+        color: red;
+    }
+    a:active{
+        color: green;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.para1{
+    padding-left: 150px;
+    margin-left: 750px;
+}
