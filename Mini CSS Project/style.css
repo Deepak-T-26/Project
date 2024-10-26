@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+h1{
+    padding-left: 30px;
+}
+h1,li,ul{
+    display: inline;
+}
+ul{
+    margin: 70%;
+}
+li{
+    color: gray;
+
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+input{
+    width: 70%;
+    padding: 15px;
+}
+.searchbar{
+    padding: 50px;
+    text-align: center;
+    background-color: pink;
+}
+.box{
+    border: 2px solid black;
+    display: inline-block;
+    width: 250px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+.product{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: pink;
+
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+.box:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.about{
+    text-align: center;
+
+    padding: 20px;
+    background-color: pink;
+}
+.contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+
+}
+
+@media screen and (max-width:1263px) {
+
+    ul{
+        margin: 65%;
+    }
+    
+}
+
+@media screen and (max-width:1100px) {
+
+    ul{
+        margin: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width:1094px) {
+
+    ul{
+        margin: 45%;
+    }
+    
+}
+
+
+
+@media screen and (max-width:690px) {
+
+    ul{
+        margin: 35%;
+    }
+    
+}
+
+@media screen and (max-width:579px) {
+
+    ul{
+        margin: 33%;
+    }
+    
+}
+@media screen and (max-width:562px) {
+
+    ul{
+        margin: 30%;
+    }
+    
+}
+@media screen and (max-width:530px) {
+
+    ul{
+        margin: 27%;
+    }
+    
+}
+@media screen and (max-width:495px) {
+
+    ul{
+        margin: 25%;
+    }
+    
+}
+@media screen and (max-width:512px) {
+
+    h1{
+       padding: 0;
+    }
+    
+}
+
