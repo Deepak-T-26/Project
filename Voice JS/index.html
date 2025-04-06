@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url(./voice-assistant-concept-sound-wave-voice-sound-recognition-equalizer-wave-flow-background_208588-397.avif);">
+    <input type="text" style="margin-top: 25%; margin-left: 40%;">
+    <button onclick="a()" >Click</button>
+    <script>
+        function a(){
+            Text=document.querySelector('input').value;
+            const s=new SpeechSynthesisUtterance(Text);
+            const cv=speechSynthesis.getVoices();
+            s.voice=cv[5];
+            speechSynthesis.speak(s);
+            console.log(Text)
+        }
+    </script>
+</body>
+</html>
